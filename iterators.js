@@ -83,27 +83,45 @@
 // let longFavoriteWords = favoriteWords.filter(word => word.length > 7); //arrow function
 
 
-//fix broken methods with documentation
-let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+// //fix broken methods with documentation
+// let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+//
+// // Something is missing in the method call below
+//
+// console.log(words.some(function(word) {
+//   return word.length < 6;
+// }));
+//
+// // Use filter to create a new array
+// let interestingWords = words.filter(function(word) { //regular function
+//   return word.length > 5;
+// });
+//
+// let interestingWords = words.filter(word => word.length > 5); //arrow function
+//
+// console.log(interestingWords);
+//
+// // Make sure to uncomment the code below and fix the incorrect code before running it
+//
+// console.log(interestingWords.every(word => word.length > 5));
 
-// Something is missing in the method call below
 
-console.log(words.some(function(word) {
-  return word.length < 6;
-}));
+//choose correct iterator methods
+let cities = ['Nashville', 'Charlotte', 'Asheville', 'Austin', 'Boulder'];
 
-// Use filter to create a new array
-let interestingWords = words.filter(function(word) {
-  return word.length > 5;
-});
+let nums = [1, 50, 75, 200, 350, 525, 1000];
 
-let interestingWords = words.filter(word => word.length > 5);
-console.log(interestingWords);
+//  Choose a method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
 
-// Make sure to uncomment the code below and fix the incorrect code before running it
+// Choose a method that will return a new array
+let longCities = cities.filter(city => city.length > 7);
 
-console.log(interestingWords.every(word => word.length > 5));
+// Choose a method that will return a new array
+let smallerNums = nums.map(num => num - 5);
 
+// Choose a method that will return a boolean value
+nums.some(num => num < 0);
 
 
 
