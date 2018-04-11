@@ -35,28 +35,53 @@
 // let bigNumbers = numbers.map(numbers => numbers * 10);
 // console.log(bigNumbers);
 
-//secretMessage
-let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+// //secretMessage
+// let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+//
+// // Create the secretMessage array below
+// let secretMessage = animals.map(function(animal) { // regular function
+//   return animal.charAt(0);
+// });
+//
+// let secretMessage = animals.map(animal => animal.charAt(0)); //arrow function
+//
+// console.log(secretMessage.join(''));
+//
+// let bigNumbers = [100, 200, 300, 400, 500];
+//
+// // Create the smallNumbers array below
+// let smallNumbers = bigNumbers.map(function(number) { //regular function
+//   return number / 100;
+// });
+//
+// let smallNumbers = bigNumbers.map(num => num/100); //arrow function
+//
+// console.log(smallNumbers);
 
-// Create the secretMessage array below
-let secretMessage = animals.map(function(animal) { // regular function
-  return animal.charAt(0);
-});
 
-let secretMessage = animals.map(animal => animal.charAt(0)); //arrow function
+// //.filter examples
+// let words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door'];
+//
+// let shortWords = words.filter(function(word) { //regular function
+//   return word.length < 6;
+// });
+//
+// //let shortWords = words.filter(word => word.length < 6); //arrow function
+//
+//
+// let randomNumbers = [375, 200, 3.14, 7, 13, 852];
+//
+// // Call .filter() on randomNumbers below
+// let smallNumbers = randomNumbers.filter(number => number < 250);
+//
+// let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+//
+// let longFavoriteWords = favoriteWords.filter(function(word) {
+//   return word.length > 7;
+// });
+//
+// let longFavoriteWords = favoriteWords.filter(word => word.length > 7); //arrow function
 
-console.log(secretMessage.join(''));
-
-let bigNumbers = [100, 200, 300, 400, 500];
-
-// Create the smallNumbers array below
-let smallNumbers = bigNumbers.map(function(number) { //regular function
-  return number / 100;
-});
-
-let smallNumbers = bigNumbers.map(num => num/100); //arrow function
-
-console.log(smallNumbers);
 
 
 
