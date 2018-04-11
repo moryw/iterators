@@ -30,21 +30,33 @@
 // fruits.forEach(fruit =>
 //   console.log('I want to eat a ' + fruit));
 
-//.map method
-let numbers = [1, 2, 3, 4, 5];
-let bigNumbers = numbers.map(numbers => numbers * 10);
-console.log(bigNumbers);
+// //.map method
+// let numbers = [1, 2, 3, 4, 5];
+// let bigNumbers = numbers.map(numbers => numbers * 10);
+// console.log(bigNumbers);
 
+//secretMessage
 let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
 // Create the secretMessage array below
-let secretMessage =
+let secretMessage = animals.map(function(animal) { // regular function
+  return animal.charAt(0);
+});
+
+let secretMessage = animals.map(animal => animal.charAt(0)); //arrow function
 
 console.log(secretMessage.join(''));
 
 let bigNumbers = [100, 200, 300, 400, 500];
 
 // Create the smallNumbers array below
+let smallNumbers = bigNumbers.map(function(number) { //regular function
+  return number / 100;
+});
+
+let smallNumbers = bigNumbers.map(num => num/100); //arrow function
+
+console.log(smallNumbers);
 
 
 
